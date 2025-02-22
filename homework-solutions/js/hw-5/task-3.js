@@ -11,7 +11,7 @@ let consonantsQuan = 0;
 
 let vowelsList = 'aeiouAEIOU';
 let consonantsList = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
-let specialChars = ' !@#$%^&*()_+[]{}|;:,.<>?/~`=\\\'"';
+let specialChars = "- !@#$%^&*()_+[]{}|;:,.<>?/~`=\\'-'\"";
 
 for (let i = 0; i < word.length; i++) {
   if (specialChars.includes(word[i])) {
