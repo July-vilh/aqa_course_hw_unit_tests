@@ -1,7 +1,7 @@
 import { fizzBuzzResult } from '../../../homework-solutions/js/hw-5/task-2';
 
 describe('[JS] - [HW 5] - Task 2', () => {
-  test('getEvenNumbers should return even numbers from 10 to 0 as a string', () => {
+  test('should generate the FizzBuzz sequence from 1 to 100', () => {
     expect(fizzBuzzResult).toBe(`1
 2
 3 - делится на 3

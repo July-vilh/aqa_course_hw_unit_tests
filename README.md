@@ -8,12 +8,12 @@ npm install
 
 ```js
 // For example
-npm run js-7-1
+npm run hw-7-1
 ```
 
 ## Run unit tests for all tasks in homework
 
 ```js
 // For example
-npm run js-7-set
+npm run hw-7-set
 ```
