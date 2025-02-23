@@ -9,14 +9,10 @@ let vowelsAndConsonantsResult = '';
 let vowelsQuan = 0;
 let consonantsQuan = 0;
 
-let vowelsList = 'aeiouAEIOU';
-let consonantsList = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
-let specialChars = "- !@#$%^&*()_+[]{}|;:,.<>?/~`=\\'-'\"";
+const vowelsList = 'aeiouAEIOU';
+const consonantsList = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
 
 for (let i = 0; i < word.length; i++) {
-  if (specialChars.includes(word[i])) {
-    continue;
-  }
   if (vowelsList.includes(word[i])) {
     vowelsQuan += 1;
   } else if (consonantsList.includes(word[i])) {
