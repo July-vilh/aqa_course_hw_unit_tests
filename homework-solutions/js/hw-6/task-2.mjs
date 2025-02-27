@@ -12,8 +12,50 @@
   const myPizzasT1 = ['Peperoni', 'Margherita', 'Diablo', 'Vegetarian'];
   const myPizzasT2 = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
 */
+'use strict';
+let resultUnique = [];
+let resultNull = null;
+let hasUniquePizzas = false;
 
-let resultUnique;
-let resultNull;
+const competitorPizzas = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
+const myPizzasT1 = ['Peperoni', 'Margherita', 'Diablo', 'Vegetarian'];
+const myPizzasT2 = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
+
+const competitorPizzasLower = [];
+const myPizzasT1Lower = [];
+const myPizzasT2Lower = [];
+
+for (let pizza of competitorPizzas) {
+  competitorPizzasLower.push(pizza.toLowerCase());
+}
+
+for (let myPizza1 of myPizzasT1) {
+  myPizzasT1Lower.push(myPizza1.toLowerCase());
+}
+
+for (let myPizza2 of myPizzasT2) {
+  myPizzasT2Lower.push(myPizza2.toLowerCase());
+}
+
+for (let i = 0; i < myPizzasT1.length; i++) {
+  if (!competitorPizzasLower.includes(myPizzasT1Lower[i])) {
+    resultUnique.push(myPizzasT1[i]);
+    hasUniquePizzas = true;
+  }
+}
+
+for (let i = 0; i < myPizzasT2.length; i++) {
+  if (!competitorPizzasLower.includes(myPizzasT2Lower[i])) {
+    resultUnique.push(myPizzasT2[i]);
+    hasUniquePizzas = true;
+  }
+}
+
+if (!hasUniquePizzas) {
+  resultNull = null;
+}
+
+console.log(resultUnique);
+console.log(resultNull);
 
 export { resultNull, resultUnique };
