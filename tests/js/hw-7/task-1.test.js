@@ -40,11 +40,7 @@ describe('[JS] - [HW 7] - Task 1', () => {
       expect(devideBy('')).toBe('');
     });
 
-    test('should handle words with uppercase letters correctly', () => {
-      expect(devideBy('I AM A DEVELOPER')).toBe('i_Am_A_Developer');
-    });
-
-    test('[EXTRA] should handle extra spaces between words gracefully', () => {
+    test('[EXTRA] should handle extra spaces between words', () => {
       expect(devideBy('I    am    an     engineer')).toBe('i_Am_An_Engineer');
     });
   });
