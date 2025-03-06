@@ -29,6 +29,6 @@ const find = numbers.find((element, index) => element === index);
 const sort = numbers.sort((a, b) => a - b);
 const reduce = numbers.reduce((result, num) => result + num, 0);
 const some = numbers.some((element) => element > 90);
-const every = numbers.every((element) => element.length >= 2);
+const every = numbers.every((element) => element >= 10 && element < 100);
 
 export { forEach, map, filter, find, sort, reduce, some, every };
