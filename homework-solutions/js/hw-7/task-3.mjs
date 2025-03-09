@@ -7,9 +7,16 @@
   Например при подаче числа 19 (1+9=10>9, потому 1+0=1) выводится 1
 
 */
-
+'use strict';
 function digitalRoot(number) {
-  // Ваш код
+  const digArray = number.toString().split('');
+  let sumOfArray = 0;
+  for (number of digArray) {
+    sumOfArray += Number(number);
+  }
+
+  return sumOfArray > 9 ? digitalRoot(sumOfArray) : sumOfArray;
 }
+console.log(digitalRoot(19));
 
 export { digitalRoot };
