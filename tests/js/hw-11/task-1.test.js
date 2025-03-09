@@ -33,12 +33,12 @@ describe('[JS] - [HW 11] - Task 1', () => {
     beforeEach(() => {
       emp = new Employee('John', 'Doe', 'Developer', 3000);
       emp2 = new Employee('Barbara', 'Johnson', 'QA', 2500);
-      company = new Company('Tech Corp', '123-456', 'Main Street');
+      company = new Company('Tech Corp', 73737743, 'Main Street');
     });
 
     test('Should correctly create a company and access fields', () => {
       expect(company.title).toBe('Tech Corp');
-      expect(company.phone).toBe('123-456');
+      expect(company.phone).toBe(73737743);
       expect(company.address).toBe('Main Street');
     });
 

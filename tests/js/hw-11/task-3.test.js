@@ -69,7 +69,7 @@ describe('[JS] - [HW 11] - Task 3', () => {
     test('should add a valid employee', () => {
       const dev = new Developer('Alice', 'Smith', 80000, ['JavaScript']);
       company.addEmployee(dev);
-      expect(company.employees).toContain(dev);
+      expect(company.getEmployees()).toContain(dev);
     });
 
     test('should throw an error if the employee is not an instance of Employee', () => {

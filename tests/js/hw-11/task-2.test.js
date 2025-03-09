@@ -5,7 +5,7 @@ describe('[JS] - [HW 11] - Task 2', () => {
   const TOTAL_SALARY = 12_000;
 
   beforeEach(() => {
-    company = new Company('Tech Corp', '123-456', 'Main Street');
+    company = new Company('Tech Corp', 123456, 'Main Street');
     emp1 = new Employee('John', 'Doe', 'Developer', 3000);
     emp2 = new Employee('Jane', 'Smith', 'Manager', 5000);
     emp3 = new Employee('Mark', 'Brown', 'Designer', 4000);
@@ -128,7 +128,7 @@ describe('[JS] - [HW 11] - Task 2', () => {
       const validLastNames = [
         { value: 'Doe', expected: 'Doe' },
         { value: 'Smith', expected: 'Smith' },
-        { value: 'A', expected: 'A' }, // Minimum length
+        { value: 'Ab', expected: 'Ab' }, // Minimum length
         { value: 'B'.repeat(50), expected: 'B'.repeat(50) }, // Maximum length
       ];
 
