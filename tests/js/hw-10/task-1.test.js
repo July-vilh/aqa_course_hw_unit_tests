@@ -11,7 +11,7 @@ describe('[JS] - [HW 10] - Task 1', () => {
   describe('Context', () => {
     test('getInfo should return a string with the correct context', () => {
       const result = qa.getInfo('Hello');
-      expect(result).toBe(`Hello, my name is ${qa.name} I'm ${qa.age} and my salary is ${qa.salary}`);
+      expect(result).toBe(`Hello, my name is ${qa.name}, I'm ${qa.age} and my salary is ${qa.salary}`);
     });
   });
 
