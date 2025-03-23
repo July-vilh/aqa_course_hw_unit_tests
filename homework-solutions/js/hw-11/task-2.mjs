@@ -56,12 +56,13 @@ class Employee {
     return this.#salary;
   }
 
-  set salary(value) {
-    if (!value || value <= 0 || value >= 100000 || typeof value !== 'number') {
-      throw new Error('Incorrect salary');
-    } else {
-      this.#salary = value;
+  set salary(newSalary) {
+    if (!newSalary || typeof newSalary !== 'number') {
+      throw new Error('Salary must be a number');
+    } else if (newSalary <= 0 || newSalary >= 10000) {
+      throw new Error('Salary should be > 0 and max salary = 10000');
     }
+    this.#salary = newSalary;
   }
 }
 
