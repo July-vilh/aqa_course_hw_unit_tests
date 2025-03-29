@@ -97,9 +97,9 @@ class Company {
   findEmployeeByName(firstName) {
     const foundEmployee = this.#employees.find((employee) => employee.firstName === firstName);
     if (!foundEmployee) {
-      throw new Error(`Employee with firstName "${firstName}" not found`);
-    } else if (!foundEmployee === 'string') {
-      throw new Error(`Employee with firstName "${firstName}" should be 'string'`);
+      throw new Error(`Employee not found`);
+    } else if (typeof firstName !== 'string') {
+      throw new Error(`firstName "${firstName}" should be 'string'`);
     }
     return foundEmployee;
   }
