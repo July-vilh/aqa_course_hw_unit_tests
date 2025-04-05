@@ -8,14 +8,10 @@
 Функция должна возвращать false, если хотя бы одно из условий не выполнено. */
 
 function validatePassword(password: string): boolean {
-  if (
+  return (
     password.length >= 8 &&
     password.trim() !== '' &&
     /[a-z]/.test(password) &&
     /[A-Z]/.test(password) &&
-    /[0-9]/.test(password)
-  ) {
-    return true;
-  }
-  return false;
+    /[0-9]/.test(password) )
 }
