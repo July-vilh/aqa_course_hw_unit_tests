@@ -50,6 +50,9 @@ console.log(stringArray);
 //11. Создайте дженерик функцию getLastElement, которая принимает массив элементов типа T, и возвращает последний элемент (типа T).
 
 function getLastItem<T>(array: T[]): T {
+  if (array.length === 0) {
+    throw new Error('Array is empty');
+  }
   return array[array.length - 1];
 }
 
