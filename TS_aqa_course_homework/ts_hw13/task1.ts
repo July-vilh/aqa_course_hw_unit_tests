@@ -23,7 +23,7 @@ type User = {
   email?: string;
 };
 
-type Grade = { grade: 'junior' | 'middle' | 'senior' };
+type Grade =  'junior' | 'middle' | 'senior' ;
 
 /*
 3. Создайте интерфейс для объекта Car, который должен содержать поля:
