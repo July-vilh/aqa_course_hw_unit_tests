@@ -42,15 +42,9 @@ abstract class Employee implements IPerson {
 
 class Manager extends Employee {
   constructor(
-<<<<<<< HEAD
     name: string,
     surname: string,
     experienceYears: number,
-=======
-     name: string,
-     surname: string,
-     experienceYears: number,
->>>>>>> 4e26a9ce35128d8742efb24659ecc9d949a26840
     public prefered: 'scrum' | 'kanban',
   ) {
     super(name, surname, experienceYears);
