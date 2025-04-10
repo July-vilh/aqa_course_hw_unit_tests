@@ -3,6 +3,7 @@
       Стринговые поля: name, surname
       Намберовые поля: experienceYears
       Метод, возвращающий строку: getDetails().
+      
   - Абстрактный класс Employee должен:
       Имплементировать интерфейс IPerson.
       Содержать защищенное (protected) поле: salary, не передающееся в конструктор (по дефолту 0)
@@ -41,9 +42,15 @@ abstract class Employee implements IPerson {
 
 class Manager extends Employee {
   constructor(
+<<<<<<< HEAD
     name: string,
     surname: string,
     experienceYears: number,
+=======
+     name: string,
+     surname: string,
+     experienceYears: number,
+>>>>>>> 4e26a9ce35128d8742efb24659ecc9d949a26840
     public prefered: 'scrum' | 'kanban',
   ) {
     super(name, surname, experienceYears);
